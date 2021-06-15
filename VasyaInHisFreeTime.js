@@ -1,23 +1,16 @@
 /*
-https://www.codewars.com/kata/556eed2836b302917b0000a3
+https://www.codewars.com/kata/559011063089b0d5500001aa
 
-Vasya isn't really good at math. However, he wants to get a good mark for the class. So he made a deal with his teacher. 
-"I wil study very hard and will be able to solve any given problem!" - Vasya said.
+Vasya has a very limited amount of free time. During these precision minutes he likes to think about strings containing zeros and ones.
 
-Finally, today is the time to show what Vasya achieved. He solved the given task immediately. Can you?
+Vasya considers the following operation: he chooses any two adjacent positions in the string, and if one of them contains 0, and the other contains 1, 
+then we are allowed to remove these two digits from the string.
 
-Task:
-You are given a system of equations:
+Now Vasya thinks of what is the minimum length of the string that can remain after applying the described operation several times (possibly, zero)? 
+Help him to calculate this number.
 
-a2+b=na+b2=m a^2 + b = n \\ a + b^2=ma 
-2
- +b=n
-a+b 
-2
- =m
-In JS, C# and Java the parameters of the system: 1 ≤ n, m ≤ 1000
-
-You should count, how many there are pairs of integers (a, b) (0 ≤ a, b) which satisfy the system.
+###Input First line of the input contains a single integer n, (1 ≤ n ≤ 500000), the length of the string Vasya has. 
+The second line contains the string of length n consisting only from zeros and ones.
 
 */
 
