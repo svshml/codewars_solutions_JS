@@ -18,4 +18,12 @@ var mispelled = function(word1, word2){
   
    if ( word1.includes(word2)=== true || word2.includes(word1) === true){
       count = Math.abs(word1.length - word2.length);
- }
+  }
+  else {
+    for( let i=0; i < maxL; i++){
+    if ( word1[i] !== word2[i])
+      count++; 
+      }
+  }
+return count <= 1;
+}
