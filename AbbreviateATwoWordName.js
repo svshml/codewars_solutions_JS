@@ -17,3 +17,10 @@ function abbrevName(name){
  let arr =name.split(' ');
   return arr[0][0].toUpperCase()+'.' + arr[1][0].toUpperCase();
   }
+
+
+function abbrevName(name){
+  
+return   name.split(" ").map( el => el[0].toUpperCase()).join('.');
+  
+  }
