@@ -8,8 +8,5 @@ Example:
 */
 
 function digitize(n) {
-  n= n+''
- let arr = n.split('');
-  arr = arr.reverse();
-  return arr.map(el => Number(el))
+  return String(n).split('').reverse().map(el => Number(el));
 }
