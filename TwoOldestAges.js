@@ -14,7 +14,5 @@ twoOldestAges( [1, 2, 10, 8] ) // should return [8, 10]
 */
 
 function twoOldestAges(ages){
-   let arr = ages.sort((a,b) => a- b);
-  let l = arr.length -1;
-  return [arr[l-1], arr[l]];
+return  ages.sort((a,b) => a- b).slice(-2)
 }
