@@ -15,3 +15,9 @@ for ( let i= 0; i < name.length;i++){
 }
  return sum ;
 } 
+
+or
+
+function billboard(name, price = 30){
+return name.split('').map(el => el =price).reduce((el,sum)=> sum+el);
+} 
