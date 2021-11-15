@@ -13,24 +13,21 @@ Assume that expression is always valid and division is always an integer divisio
 
 function postfixEvaluator(string) {
  const mathOps = ["+","-","*","/"];
- const arr     = string.split(' ');
- var ar = [];
- var al;
+ const arr  = string.split(' ');
+ var temp = [];
  var a;
  var b;
-  console.log(string)
- for (i =0; i < arr.length; i++){
-   if (mathOps.indexOf(arr[i])<0) ar.push(arr[i])
+  for (i =0; i < arr.length; i++){
+   if (mathOps.indexOf( arr[i])<0 ) temp.push(arr[i])
    else {
-     b=1*ar.pop();
-     a=1*ar.pop();
-     if (arr[i]=='+') ar.push(a + b); 
-     if (arr[i]=='-') ar.push(a - b); 
-     if (arr[i]=='*') ar.push(a * b);  
-     if (arr[i]=='/') ar.push(Math.round(a / b)); 
+     b= 1*ar.pop();
+     a= 1*ar.pop();
+     if (arr[i]=='+') temp.push(a + b); 
+     if (arr[i]=='-') temp.push(a - b); 
+     if (arr[i]=='*') temp.push(a * b);  
+     if (arr[i]=='/') temp.push(Math.round(a / b)); 
    }   
- }
- 
- return ar[0];
+ } 
+ return temp[0];
 }
 
