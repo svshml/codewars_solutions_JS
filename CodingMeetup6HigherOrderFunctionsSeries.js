@@ -31,3 +31,7 @@ function isSameLanguage(list) {
  }
   return res;
 }
+
+function isSameLanguage(list) {
+ return list.every((el,i,arr) => el.language == arr[0].language);
+}
