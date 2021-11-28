@@ -23,3 +23,7 @@ function getAverageAge(list) {
  }
  return Math.round(sum/list.length); 
 }
+
+function getAverageAge(list) {
+ return  Math.round(list.map(el=>el.age).reduce((el,sum)=> sum+ el)/list.length);
+}
