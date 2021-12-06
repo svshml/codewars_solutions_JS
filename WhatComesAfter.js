@@ -21,3 +21,7 @@ let result = '';
  }
   return result;
 }
+
+function comes_after(str,l) {
+  return str.split('').filter((el, i, arr)=> i>0 && arr[i-1].toLowerCase() == l.toLowerCase() && el.match(/^[a-z]+$/i)).join('')
+}
