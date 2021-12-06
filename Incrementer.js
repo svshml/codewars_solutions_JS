@@ -26,3 +26,7 @@ function incrementer(nums) {
   }
   return arr;
 }
+
+function incrementer(nums) { 
+ return nums.map((el,i)=> +String(el+i+1).slice(-1));
+}
